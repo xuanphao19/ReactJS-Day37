@@ -88,6 +88,7 @@ const navRoute = [
       </svg>
     ),
     title: "Home",
+    url: "/",
   },
   {
     id: "nav_hw_2_1-1",
@@ -105,6 +106,7 @@ const navRoute = [
       </svg>
     ),
     title: "Dashboard",
+    url: "profile",
   },
   {
     id: "nav_hw_2_1-5",
@@ -122,6 +124,7 @@ const navRoute = [
       </svg>
     ),
     title: "Bài viết",
+    url: "modal-demo",
   },
   {
     id: "nav_hw_2_1-2",
@@ -139,5 +142,6 @@ const navRoute = [
       </svg>
     ),
     title: "Thảo Luận",
+    url: "scroll-demo",
   },
 ];

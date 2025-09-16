@@ -124,7 +124,7 @@ function SearchResult({ isOpen, onModalClose, onModalOpen, clearInput }) {
     setLoading(true);
     setError(null);
     const debouncedFetch = debounce((value) => {
-      fetch("/data.json")
+      fetch("data.json")
         .then(async (response) => {
           if (!response.ok) {
             const text = await response.text();

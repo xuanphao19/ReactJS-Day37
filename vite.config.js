@@ -5,6 +5,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "ReactJS-Day37",
   plugins: [react()],
   server: {
     port: 3009,
