@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--btn-link-text-color);
+  user-select: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.logo img {
+  border-radius: 8px;
+  width: 2.05em;
+  height: 2em;
+}
+
+.logo span {
+  font-size: 0.8em;
+}
+
+.small {
+  font-size: 1.4rem;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+.large {
+  font-size: 2.6rem;
+}

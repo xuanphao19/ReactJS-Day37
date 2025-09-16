@@ -1,0 +1,122 @@
+.sidebar {
+  width: max-content;
+  background: var(--footer-bgr, #151619);
+
+  .toggle-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    margin-top: 30px;
+  }
+
+  .head-sidebar {
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--app-button-color);
+    max-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.2s linear, opacity 0.3s linear,
+      visibility 0.2s linear;
+  }
+  .head-sidebar.extend {
+    max-width: 200px;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    cursor: pointer;
+  }
+  .toggle-sidebar button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 4px 6px 4px 8px;
+    margin: 0 4px 4px 0;
+    font-size: 2.8rem;
+    color: #40e746;
+    background: transparent;
+    transition: background-color 0.3s linear;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: none;
+  }
+
+  .toggle-sidebar button:hover {
+    background-color: rgba(255, 136, 255, 0.133);
+  }
+
+  .sidebar-content {
+    min-height: calc(100vh - 110px);
+    color: #fff;
+    padding: 20px 16px;
+    transition: width 0.3s;
+    flex-shrink: 0;
+    width: 80px;
+
+    &.extend {
+      width: 282px;
+      .icon {
+        background-color: unset;
+        border-radius: unset;
+        box-shadow: unset;
+      }
+    }
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #121111e7;
+    border-radius: 999px;
+    box-shadow: 0 0 2px #f8f;
+    transition: box-shadow 0.2s linear, background-color 0.2s linear,
+      border-radius 0.2s linear;
+  }
+  .nav_admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    .item {
+      padding: 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #ddd;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      &.active {
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+    .nav_extend {
+      background-color: #000;
+    }
+  }
+}

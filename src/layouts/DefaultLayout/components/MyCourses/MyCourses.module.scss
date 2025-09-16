@@ -1,0 +1,139 @@
+.courses-modal {
+  position: absolute;
+  margin: 0px auto;
+  inset: 110% 138px auto 0;
+  left: unset;
+  width: 520px;
+  min-width: 230px;
+}
+
+.wrapper {
+  flex: 1;
+  padding: 24px 8px !important;
+  background: var(--prism-bg);
+  box-shadow: 0 -4px 32px #0003;
+  transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+  margin: 0;
+  overflow: hidden;
+  will-change: opacity, transform;
+  color: #1d2129;
+  background: var(--bg-1);
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 1.4rem;
+  color: #666;
+  margin: 8px 0;
+  padding: 8px 36px 8px 12px;
+  cursor: pointer;
+
+  border-radius: 10px;
+  border-top: solid 1px rgba(0, 0, 0, 0.05);
+  background: #f051231a;
+  background-color: var(--white-color);
+  transition: background-color 0.3s linear, opacity 0.3s linear;
+}
+
+.item:hover {
+  opacity: 0.8;
+  background-color: #76798729;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--app-button-color);
+  padding: 16px 10px;
+  padding-left: 22px;
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  background-color: var(--white-color) !important;
+  cursor: auto;
+}
+
+.courses-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  padding: 0 10px 0 6px;
+  line-height: 18px;
+  color: var(--text-color-1);
+  flex: 1;
+  word-break: break-word;
+}
+
+.courses-item::after {
+  content: "";
+  content: var(--progress);
+  position: absolute;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+  width: 20px;
+  aspect-ratio: 1;
+
+  color: white;
+  font-size: 10px;
+  translate: 0 -10px;
+  border-radius: 50%;
+  background-color: #0065bb;
+}
+
+.created-time {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.tick {
+  color: var(--pro-icon-border-color);
+  font-size: 1.2rem;
+  background: #82909338;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.courses {
+  flex: 1;
+}
+
+.courses strong {
+  color: var(--text-color);
+  font-size: 2.2rem;
+}
+.courses-img {
+  width: 7em;
+  height: 4.2em;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.progress {
+  position: relative;
+  height: 8px;
+  background-color: var(--bg-color, #ddd);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.progress:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--progress);
+  background-color: #f05123;
+  transition: width ease 1s;
+}

@@ -1,0 +1,105 @@
+.container {
+  width: calc(100% - 60px);
+  padding: 30px;
+}
+
+.title {
+  color: #ff5b2e;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+}
+.payment {
+  color: #000958;
+  background-clip: text;
+  background: linear-gradient(45deg, #ff6b6b, #0400ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc {
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+.setup_router {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.setup_router h2 {
+  padding: 40px 0;
+  text-align: left;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.router_img {
+  width: 80%;
+  margin: auto;
+}
+
+.video-lists {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  button {
+    background-color: var(--outline-success-color-input);
+    padding: 6px 12px;
+  }
+}
+.card {
+  padding: 16px 20px;
+  width: 256px;
+  border-radius: 8px;
+  background: var(--bg-3);
+}
+.card-hearding {
+  margin-bottom: 1.6rem;
+  font-size: 20px;
+}
+.card-desc {
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.content-video-home + button {
+  right: 0;
+  top: 0;
+  padding: 6px 14px;
+  background: #0000003d;
+  z-index: 999;
+}
+.card-masseger-close,
+.card-masseger-open {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  z-index: 99999999;
+  padding: 20px 48px;
+  translate: -50% 0%;
+  background: #edffe0;
+  font-size: 26px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px solid #79ff19;
+  color: #44a500;
+}
+
+.card-masseger-close {
+  background: #ffe0e0;
+  border: 2px solid #ff1919;
+  color: #a50000;
+}
+.repositories {
+  font: 1.25em sans-serif;
+}

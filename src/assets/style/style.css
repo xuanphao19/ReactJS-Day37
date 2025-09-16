@@ -1,0 +1,279 @@
+:root {
+  --primary: #5ebbff;
+  --primary-to: #a174ff;
+  --secondary: #ec6c24;
+
+  --text-color: #25272a;
+  --text-color-1: #808b9a;
+  --text-color-2: #fff;
+  --text-color-3: #4e586b;
+  --text-placeholder: #8a8d91;
+  --text-secondary-color: #777;
+  --text-highlight-color: #0aa;
+
+  --page-active-color: #fff;
+  --app-button-color: #0093fc;
+  --app-button-disabled: #b1b1b1;
+  --app-button-color-hover: #fff;
+  --app-second-button-color-hover: #eef4fc;
+
+  --p-color: #45494f;
+  --p-color-1: #0093fc;
+  --p-color-2: #45494f;
+  --p-color-3: #808b9a;
+  --p-color-4: #4e586b;
+
+  --border-color: #e7e7e7;
+  --border-bottom-color: #e4eef0;
+  --border-color-white: #191d1e;
+  --border-color-1: #bdc6dc;
+  --border-color-2: #bdc6dc;
+  --table-border-color: #ccc;
+
+  --bg-white-1: #fff;
+  --bg-white-2: #f0f0f0;
+  --bg-white-3: #fff;
+
+  --light-icon-color: #919191;
+  --dark-icon-color: #222;
+
+  --bg-1: #eef4fc;
+  --bg-2: #f2f9ff;
+  --bg-3: #0093fc;
+  --bg-4: #f6f7f9;
+  --bg-5: #eaedf2;
+  --bg-6: #c9fffc;
+  --bg-navbar: #f6f7f9;
+
+  --overlay-alpha-80: hsla(0, 0%, 96%, 0.8);
+
+  --bg-navbar-backdrop: rgba(246, 247, 249, 0.6);
+  --bg-gradient: linear-gradient(#fbfdff, #fbfdff) padding-box,
+    linear-gradient(180deg, #5ebbff, #a174ff 40%) border-box;
+  --toast-background: linear-gradient(90deg, #5ebbff, #a174ff);
+
+  --outline-color-input: #0093fc;
+  --outline-error-color-input: #cc5140;
+  --outline-success-color-input: #48bd79;
+  --bg-color-input: #fff;
+  --bg-error-color-input: #fff9f9;
+  --bg-success-color-input: #f0ffed;
+
+  --test-width: 55%;
+  --videojs-max-width: min(
+    100vh * (16 / 9) - (var(--navbar-height) + var(--action-bar-height)) *
+      (16 / 9) - 100px,
+    1600px
+  );
+  --navbar-height: 50px;
+  --action-bar-height: 50px;
+  --test-header-height: 43px;
+  --test-height: 250px;
+  --total-bars-height: calc(var(--navbar-height) + var(--action-bar-height));
+
+  --font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-code: "SF Mono", monospace;
+
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* *****
+    ******* */
+  --navbar-button-color: #fbfdff;
+  --navbar-button-hovered-color: #e1effe;
+  --navbar-button-selected-color: #e1effe;
+
+  --header-height: 66px;
+}
+
+html.dark {
+  --dark-2: #191d1e;
+  --dark-3: #272a31;
+  --dark-4: #191d1e;
+
+  --bg-white-1: var(--dark-3);
+  --bg-white-2: var(--dark-2);
+  --bg-white-3: var(--dark-25);
+  --bg-white-4: var(--dark-1);
+
+  --text-color: #fff;
+  --text-color-1: hsla(0, 0%, 100%, 0.7);
+  --text-color-2: hsla(0, 0%, 100%, 0.7);
+  --text-color-3: #fff;
+  --text-highlight-color: #52eeee;
+  --text-secondary-color: #fff;
+  --text-placeholder: hsla(0, 0%, 100%, 0.64);
+
+  --table-border-color: #333;
+  --page-active-color: #2e3441;
+
+  --app-button-color: #fff;
+  --app-button-color-hover: #fff;
+  --app-second-button-color-hover: #2e4a8d;
+  --app-button-disabled: #4e586b;
+
+  --p-color: hsla(0, 0%, 100%, 0.8);
+  --p-color-1: hsla(0, 0%, 100%, 0.8);
+  --p-color-2: #fff;
+  --p-color-3: hsla(0, 0%, 100%, 0.8);
+  --p-color-4: hsla(0, 0%, 100%, 0.8);
+  --desc-color: hsla(0, 0%, 100%, 0.8);
+
+  --border-bottom-color: #181d1e;
+  --border-color: var(--dark-2);
+  --border-color-white: #e7e7e7;
+  --border-color-1: #4d5465;
+  --border-color-2: #272a31;
+
+  --light-icon-color: #e7e7e7;
+  --dark-icon-color: #e7e7e7;
+
+  --toast-background: linear-gradient(90deg, #5ebbff, #a174ff);
+  --solution-separate-color: #535353;
+
+  --bg-1: #323c4a;
+  --bg-2: #32353b;
+  --bg-3: #191d1e;
+  --bg-4: #22242a;
+  --bg-5: #000;
+  --bg-6: #34474c;
+  --bg-modal: #323c4a;
+
+  --bg-gradient: none;
+  --bg-navbar: #191d1e;
+  --bg-navbar-backdrop: rgba(25, 29, 30, 0.6);
+
+  --navbar-button-color: #292d35;
+  --navbar-button-hovered-color: #2e4a8d;
+  --navbar-button-selected-color: #232e49;
+
+  --outline-color-input: #4ddaff;
+  --outline-error-color-input: #cc5140;
+  --outline-success-color-input: #48bd79;
+  --bg-color-input: #232e49;
+  --bg-error-color-input: #2c1d1b;
+  --bg-success-color-input: #0f290c;
+
+  --pro-icon-border-color: #cdb335;
+  color: var(--p-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior-block: contain !important;
+  writing-mode: horizontal-tb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  font-size: 1.6rem;
+  font-family: var(--system-ui);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  background: var(--bg-1);
+
+  overflow-y: auto;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--outline-success-color-input);
+}
+button:focus,
+button:focus-visible {
+  outline: 2px auto var(--outline-success-color-input);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.container {
+  padding: 10px;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.youtube-content {
+  border-radius: 16px;
+  overflow: hidden;
+  transform: scale(1);
+  border: 2px solid #26ff00;
+  filter: drop-shadow(0px 0px 8px #4c5cbf);
+
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #d5dde471;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #32ff35cf;
+  border-radius: 999px;
+}
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
